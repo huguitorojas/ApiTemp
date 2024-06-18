@@ -11,8 +11,5 @@ public interface SensorService {
 
     public LecturaSensor findById(Long id);
 
-    public List<LecturaSensor> findByDate(LocalDateTime fechaInicio, LocalDateTime fechaFinal);
-
-
 
 }

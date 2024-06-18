@@ -28,14 +28,5 @@ public class SensorServiceImplementation implements SensorService {
         return sensorRepository.findById(id).get();
     }
 
-    @Override
-    public List<LecturaSensor> findByDate(LocalDateTime fechaInicio, LocalDateTime fechaFinal) {
-        LecturaSensor lecturaSensor = new LecturaSensor();
-        List<LecturaSensor> lecturasPorFecha = new ArrayList<>();
 
-        if(lecturaSensor.getFechaHora().isAfter(fechaInicio) && lecturaSensor.getFechaHora().isBefore(fechaFinal))
-            lecturasPorFecha.add(lecturaSensor);
-
-        return lecturasPorFecha;
-    }
 }
